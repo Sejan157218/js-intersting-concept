@@ -61,109 +61,65 @@ only if you write as value
 let fullName ={firstName:name,lasName:null}
 */
 
-// All Equel
-/*
+/* 
+// double-triple
+
 const a = 2;
-const b = 2;
- if( a==b ){
-    console.log('they are equel')
-}
-else{
-    console.log('they are not equel')
-} */
-
-/* const a = 2;
 const b = '2';
-if( a==b ){
-    console.log('they are equel')
-}
-else{
-    console.log('they are not equel')
-} */
-/* by == convart
-true = 1;
-false = 0; */
-/* const a = 1;
-const b = true;
-if( a==b ){
-    console.log('they are equel')
-}
-else{
-    console.log('they are not equel')
-} */
+// if (a==b){
+//     console.log(true);
+// }
+// else{
+//     console.log(false);
+// }
 
-// Not Equel
-/* const a = 2;
-const b = '2';
-if( a===b ){
-    console.log('they are equel')
-}
-else{
-    console.log('they are not equel')
-} */
+if (a===b){
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+
+    // == convart variable and see only value nut === see value and type
+     */
+/* 
+ // scope
+
+ const name = 'sejan'; //global scope
+
+ if(name =='sejan'){
+     const myage = 25; ///block scope
+     var age = 25; ///global scope
+     console.log(myage)
+ }
+
+ function fullName(f,s){
+     const name = f + ' ' + s;///f and s local scope
+     return name;
+ } */
 
 /* 
-Not work (==) or(===) in array ,string,object;
-but if use loop then it work
-*/
-/* 
-const name = 'sejan' ///Global scope
-
-function fullName(first,secound){
-    const full = first + ' ' + secound;///full and first ,secound local scope
-    return full;
-}
-console.log(age)//// hoisting for var but output undefined
-if(name ==='sejan'){
-    // const age = 25; ////block scope
-
-    var age = 25;///global scope
-    console.log(age)
-}
-console.log(age) //// for var out of block scope */
-
-
-/*
-const array = [5,7,9,5,2,'sejan'];
-function closure(array){
+//  closure
+const friend = ['sejan','sajal','babu',3];
+function closur(array){
     let counter = 0;
     return function(){
         counter++;
         return array[counter];
     }
 }
-/* function closure(){
-    let counter = 0;
-    return function(){
-        counter++;
-        return array[counter];
-    }
-} */
-/*
-// let counter1 = closure();
-let counter1 = closure(array);
-    console.log(counter1());
-    console.log(counter1());
-    console.log(counter1());
-    console.log(counter1());
-    console.log(counter1());
-    console.log(counter1());
-    */
-/*
-// single Parameter
-function wellComeMsg(name){
+let closur1 = closur(friend);
+console.log(closur1());
+console.log(closur1());
+console.log(closur1());
+ */
+/* 
+// callback-function
+
+function a(name){
     name();
 }
-function parameterFunction(){
-    console.log('My name is sejan',);
+function b(){
+    console.log('it came from function b');
 }
-wellComeMsg();
-
-// double Parameter
-/* function wellComeMsg(name,parameterFunction){
-    parameterFunction(name);
-}
-function parameterFunction(name){
-    console.log('My name is ',name);
-}
-wellComeMsg('sejan',parameterFunction); */
+a(b) */

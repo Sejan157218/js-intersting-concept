@@ -5,7 +5,7 @@ function wellComeMsg(name){
 function parameterFunction(){
     console.log('My name is sejan',);
 }
-wellComeMsg();
+wellComeMsg(parameterFunction);
 
 // double Parameter
 /* function wellComeMsg(name,parameterFunction){
